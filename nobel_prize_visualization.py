@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 nobel_prize = pd.read_csv('DataSet/nobel_final.csv')
 
 male_laureates = nobel_prize[nobel_prize["gender"] == "male"]
-male_laureates_count = male_laureates.groupby("year").size()
+# male_laureates_count = male_laureates.groupby("year").size()
 
 female_laureates = nobel_prize[nobel_prize["gender"] == "female"]
 female_laureates_count = female_laureates.groupby("year").size()
@@ -25,3 +25,5 @@ plt.xlabel('Year')
 plt.ylabel('Number of Laurets ')
 plt.legend(['Male','Female'])
 plt.show()
+
+
