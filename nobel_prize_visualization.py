@@ -26,6 +26,7 @@ top_5_countries['Other'] = other_count
 "Fetching the number of nobel prize  lauretes by age "
 age_counts = nobel_prize['age_get_prize'].value_counts().sort_index()
 
+"function to plot Bar chart "
 def PlotBar(xyaxis):
     xyaxis.plot(kind='bar')
     plt.title("Number of Nobel Prize Laureates by Age")
@@ -34,9 +35,9 @@ def PlotBar(xyaxis):
     plt.show()
 
 
-
+"function to plot line graph"
 def PlotLineGraph(male_count , female_count):
-    plt.plot(male_count,color='#5865f2').groupby("year").size()
+    plt.plot(male_count,color='#5865f2')
     plt.plot(female_count,color='#a60096')
     plt.xlabel('Year')
     plt.ylabel('Number of Laurets ')
@@ -44,6 +45,7 @@ def PlotLineGraph(male_count , female_count):
     plt.show()
 
 
+"function to plot pie chart"
 def PlotPie(xyaxis):
     plt.pie(xyaxis, labels=xyaxis.index, autopct='%1.1f%%')
     plt.show()
