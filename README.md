@@ -16,4 +16,4 @@ https://www.kaggle.com/datasets/bahramjannesarr/nobel-prize-from-
 1901-till-2020
 Visualization
 
-To run the file 
+Run nobel_prize_visualization.py to plot the graphs 
