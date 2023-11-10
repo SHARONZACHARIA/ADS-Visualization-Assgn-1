@@ -55,6 +55,7 @@ def PlotBar(age_counts):
 def PlotLineGraph(male_count, female_count):
     plt.plot(male_count, color='#5865f2')
     plt.plot(female_count, color='#a60096')
+    plt.title('Noble Prize Winners by Gender')
     plt.xlabel('Year')
     plt.ylabel('Number of Laurets ')
     plt.legend(['Male', 'Female'])
@@ -67,6 +68,7 @@ top_5_countries.index = top_5_countries.index.map(country_code_to_name)
 """ function to plot pie chart """
 def PlotPie(xyaxis):
     plt.pie(xyaxis, labels=top_5_countries.index, autopct='%1.1f%%')
+    plt.title('Top Countries With highest Number of Nobel Prize winners')
     # plt.legend(xyaxis.index, loc='lower right')
     plt.show()
 
